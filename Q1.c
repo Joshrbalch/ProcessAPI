@@ -21,7 +21,6 @@ int main(int argc, char *argv[]) {
 
   else if(pid > 0) {
     // This code executes in the parent process
-    wait(&status); // Wait for the child process to finish
     printf("Parent Process - Value of x = %d\n", x);
     x = 300;
     printf("Parent Process - New Value of x = %d\n", x);
